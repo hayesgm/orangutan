@@ -1,0 +1,22 @@
+{
+  "name": "Orangutan",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "",
+  "background": {
+    "scripts": [ "orangutan.js" ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [ "decode.js" ],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "contextMenus"
+  ]
+}
