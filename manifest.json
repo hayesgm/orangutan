@@ -4,12 +4,12 @@
   "manifest_version": 2,
   "description": "",
   "background": {
-    "scripts": [ "orangutan.js" ]
+    "scripts": [ "rollups/aes.js", "openpgp.min.js", "orangutan.js" ]
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": [ "decode.js" ],
+      "js": [ "rollups/aes.js", "jquery.min.js", "openpgp.min.js", "decode.js" ],
       "run_at": "document_idle"
     }
   ],

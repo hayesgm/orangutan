@@ -1,0 +1,3 @@
+gpg -a --export tom@jones.com
+gpg -a --export-secret-key tom@jones.com
+
